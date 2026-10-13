@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIC-EMI Stores - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RIC-EMI Stores</h1>
+        <p>Your one-stop shop for quality home appliances</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Our Products</h2>
+
+        <p>Below are some of the appliances we have in stock. We try to keep prices affordable so that students and everyone can get what they need without spending too much.</p>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/fan.jpg" alt="Standing Fan">
+                <h3>Standing Fan</h3>
+                <p class="price">&#8358;8,500</p>
+                <button class="add-btn" onclick="addToCart('Standing Fan', 8500)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/blender.jpg" alt="Blender">
+                <h3>Kitchen Blender</h3>
+                <p class="price">&#8358;12,000</p>
+                <button class="add-btn" onclick="addToCart('Kitchen Blender', 12000)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iron.jpg" alt="Pressing Iron">
+                <h3>Pressing Iron</h3>
+                <p class="price">&#8358;5,500</p>
+                <button class="add-btn" onclick="addToCart('Pressing Iron', 5500)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/ricecooker.jpg" alt="Rice Cooker">
+                <h3>Rice Cooker</h3>
+                <p class="price">&#8358;9,000</p>
+                <button class="add-btn" onclick="addToCart('Rice Cooker', 9000)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/kettle.jpg" alt="Electric Kettle">
+                <h3>Electric Kettle</h3>
+                <p class="price">&#8358;4,500</p>
+                <button class="add-btn" onclick="addToCart('Electric Kettle', 4500)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/lamp.jpg" alt="Table Lamp">
+                <h3>Table Lamp</h3>
+                <p class="price">&#8358;3,500</p>
+                <button class="add-btn" onclick="addToCart('Table Lamp', 3500)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart-section">
+            <h3>Your Cart</h3>
+            <div id="cart-container">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="total-section">
+                <p>Total: &#8358;<span id="total-amount">0</span></p>
+            </div>
+            <button onclick="clearCart()" class="clear-btn" style="margin-top: 10px;">Clear Cart</button>
+        </div>
+
+        <div class="other-projects">
+            <p><a href="../index.html">Back to Assignment 1 - My CS Journey</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>RIC-EMI Stores &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
